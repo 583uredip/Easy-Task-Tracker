@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Project</title>
+        
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head >
+<body class="flex items-center justify-center min-h-screen bg-gray-900">
+    <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-lg ">
+    <h2 class="mb-4 text-2xl font-bold text-center">Easy Task Tracker</h2>
+    <div class="flex gap-3 mb-4">
+        <input type="text" id="taskInput" placeholder="Enter a new task.."
+        class="flex-1 p-2 border rounded-l">
+        <button id="addbtn" class="p-2 text-white bg-green-500 rounded-r hover:bg-green-600">
+            Add Task</button>
+
+    </div>
+    
+        <div id="tasklist" class="mb-3 text-center">
+            <div class="empty-massage">No tasks yet! Add one above</div>
+
+        </div>
+
+        <div id="stats"class="p-2 text-center rounded bg-green-50">
+            Total Tasks:<span id="totalCount">0</span> | Completed:<span id="completedCount">0</span> 
+        </div>
+        
+
+    </div>
+
+    <style>
+        .task-item
+        {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin: 5px 0;
+            background: #f9f9f9;
+            border-radius: 5px;
+            border-left: 4px solid #4caf50;
+        }
+        .task-item input[type="checkbox"]
+        {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .task-text
+        {
+            flex: 1;
+            font-size: 16px;
+        }
+        .delete-btn
+        {
+            background:blue;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    </style>
+    <script src="project.js"></script>
+    
+    
+</body>
+
+</html>
